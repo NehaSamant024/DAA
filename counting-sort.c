@@ -26,7 +26,7 @@ void countingSort(int a[],int n)
         count[i]=count[i]+count[i-1];
     }
     /* finding the index of each element and place the elements in the output array i.e. in array b */
-    for(i=n-1;i>=0;i++)
+    for(i=n-1;i>=0;i--)
     {
         b[--count[a[i]]]=a[i];
     }
